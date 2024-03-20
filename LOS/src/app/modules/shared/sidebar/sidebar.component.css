@@ -42,12 +42,12 @@
   }
   
   .content {
-    flex-grow: 1; /* Allow content to take remaining space */
+    flex-grow: 1;
     padding: 20px;
-    position: relative; /* Set position to relative */
-    z-index: 1; 
-    width: auto;/* Ensure content appears above sidebar */
-  }
+    position: sticky;
+    width: 200rem; /* Adjust the width as needed */
+    margin-top: 40px;
+}
   .submenu.open {
     display: block;
   }
