@@ -39,15 +39,21 @@
   
   .dropdown-icon {
     float: right;
+<<<<<<< HEAD
   }
   
   .content {
     flex-grow: 1; /* Allow content to take remaining space */
     padding: 20px;
     position: relative; /* Set position to relative */
-    z-index: 1; 
-    width: auto;/* Ensure content appears above sidebar */
+    z-index: 1; /* Ensure content appears above sidebar */
   }
+=======
+}
+.submenu {
+    display: none;
+  }
+  
   .submenu.open {
     display: block;
   }
@@ -57,3 +63,4 @@
     transform: rotate(90deg);
   }
   
+>>>>>>> 679f9c16055b3d5602e67c544d5608bc5be70d96
