@@ -30,3 +30,16 @@
 .dropdown-icon {
     float: right;
 }
+.submenu {
+    display: none;
+  }
+  
+  .submenu.open {
+    display: block;
+  }
+  /* Add your CSS if needed */
+
+.rotate {
+    transform: rotate(90deg);
+  }
+  
