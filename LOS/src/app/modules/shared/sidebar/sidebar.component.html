@@ -3,7 +3,7 @@
         <router-outlet></router-outlet>
       </div>
     <div class="sidebar">
-    <a href="#" >Dashboard</a>
+    <a href="/dashboard/view" >Dashboard</a>
     <div class="submenu">
         <a href="#">Submenu Item 1</a>
         <a href="#">Submenu Item 2</a>
@@ -19,7 +19,7 @@
 
     <a href="#" (click)="toggleSubMenu(1)" >Pipeline <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[1]"></i></a>
     <div class="submenu" [class.open]="isOpen[1]" >
-        <a href="#">Submenu Item 1</a>
+        <a href="/pipeline/pipelinemain">-  Pipeline - Main</a>
         <a href="#">Submenu Item 2</a>
         <a href="#">Submenu Item 3</a>
     </div>
