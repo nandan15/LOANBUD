@@ -1,19 +1,23 @@
-<div class="sidebar">
-    <a href="#">Dashboard</a>
+<div class="container">
+    <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    <div class="sidebar">
+    <a routerLink="/dashboard/view">Dashboard</a>
     <div class="submenu">
         <a href="#">Submenu Item 1</a>
         <a href="#">Submenu Item 2</a>
         <a href="#">Submenu Item 3</a>
     </div>
 
-    <a href="#">Create Loan <i class="fas fa-chevron-right dropdown-icon"></i></a>
+    <a href="">Create Loan <i class="fas fa-chevron-right dropdown-icon"></i></a>
     <div class="submenu">
         <a href="#">Submenu Item 1</a>
         <a href="#">Submenu Item 2</a>
         <a href="#">Submenu Item 3</a>
     </div>
 
-    <a href="#">Pipeline <i class="fas fa-chevron-right dropdown-icon"></i></a>
+    <a href="/pipeline/pipelinemain">Pipeline <i class="fas fa-chevron-right dropdown-icon"></i></a>
     <div class="submenu">
         <a href="#">Submenu Item 1</a>
         <a href="#">Submenu Item 2</a>
@@ -64,4 +68,5 @@
 
     <hr>
     <a href="#">Account Setup <i class="fas fa-chevron-right dropdown-icon"></i></a>
-</div>
+ 
+    </div>

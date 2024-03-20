@@ -1,32 +1,49 @@
-.sidebar {
+.container {
+    display: flex; /* Use flexbox */
+  }
+  
+  .sidebar {
     height: 100%;
     width: 250px;
     position: fixed;
-    top: 77;
+    top: 77px;
     left: 0;
-    background-color:dodgerblue;
+    background-color: dodgerblue;
     padding-top: 20px;
-}
-.sidebar a {
+  }
+  
+  .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
     color: black;
     display: block;
-}
-.sidebar a:hover {
+  }
+  
+  .sidebar a:hover {
     background-color: #f4f4f4;
-}
-.submenu {
+  }
+  
+  .submenu {
     display: none;
     padding-left: 20px;
-}
-.submenu a {
+  }
+  
+  .submenu a {
     color: #666;
     padding: 5px 0;
-}
-.submenu a:hover {
+  }
+  
+  .submenu a:hover {
     color: #333;
-}
-.dropdown-icon {
+  }
+  
+  .dropdown-icon {
     float: right;
-}
+  }
+  
+  .content {
+    flex-grow: 1; /* Allow content to take remaining space */
+    padding: 20px;
+    position: relative; /* Set position to relative */
+    z-index: 1; /* Ensure content appears above sidebar */
+  }

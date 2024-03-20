@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ViewComponent } from './view/view.component';
-
+import { dashboardrouter } from './dashboard.router';
 
 
 @NgModule({
@@ -11,7 +11,8 @@ import { ViewComponent } from './view/view.component';
     ViewComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    dashboardrouter
   ]
 })
 export class DashboardModule { }
