@@ -47,3 +47,12 @@
     position: relative; /* Set position to relative */
     z-index: 1; /* Ensure content appears above sidebar */
   }
+  .submenu.open {
+    display: block;
+  }
+  /* Add your CSS if needed */
+
+.rotate {
+    transform: rotate(90deg);
+  }
+  
