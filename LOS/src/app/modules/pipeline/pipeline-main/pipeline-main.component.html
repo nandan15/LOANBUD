@@ -5,14 +5,22 @@
       </div>
       <div>
         <button class="btn">Save Current View</button>
-        <div class="dropdown">
-          <button class="btn">Saved View</button>
-          <div class="dropdown-content">
-            <a href="#">View 1</a>
-            <a href="#">View 2</a>
-            <a href="#">View 3</a>
+        <div mdbDropdown class="dropdown">
+            <button
+              class="btn btn-primary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              aria-expanded="false"
+              mdbDropdownToggle
+            >
+              Saved view
+            </button>
+            <ul mdbDropdownMenu class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
           </div>
-        </div>
         <button class="search"><mat-icon>search</mat-icon></button>
         <button class="btn">&#128269;</button>
       </div>

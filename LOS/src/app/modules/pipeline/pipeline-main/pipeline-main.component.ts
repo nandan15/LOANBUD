@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./pipeline-main.component.css']
 })
 export class PipelineMainComponent {
+colors: any;
 
 }
