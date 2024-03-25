@@ -7,11 +7,14 @@ import { BranchComponent } from "./branch/branch.component";
 import { BrokerComponent } from "./broker/broker.component";
 import { LoanOfficerComponent } from "./loan-officer/loan-officer.component";
 import { ContactsComponent } from "./contacts/contacts.component";
+import { CreateBackofficeUserComponent } from "./create-backoffice-user/create-backoffice-user.component";
+
 
 
 const usercontactsRoutes:Routes=[
     {path:'',component:UsercontactsComponent,children:[
         {path:'back-office',component:BackOfficeComponent},
+        {path:'createbackofficeuser',component:CreateBackofficeUserComponent},
         {path:'branch',component:BranchComponent},
         {path:'broker',component:BrokerComponent},
         {path:'loan-officer',component:LoanOfficerComponent},
