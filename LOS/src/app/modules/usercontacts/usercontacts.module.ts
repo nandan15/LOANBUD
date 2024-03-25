@@ -6,6 +6,7 @@ import { BrokerComponent } from './broker/broker.component';
 import { LoanOfficerComponent } from './loan-officer/loan-officer.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { BorrowersComponent } from './borrowers/borrowers.component';
+import { UsercontactsComponent } from './usercontacts/usercontacts.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { BorrowersComponent } from './borrowers/borrowers.component';
     BrokerComponent,
     LoanOfficerComponent,
     ContactsComponent,
-    BorrowersComponent
+    BorrowersComponent,
+    UsercontactsComponent
   ],
   imports: [
     CommonModule
