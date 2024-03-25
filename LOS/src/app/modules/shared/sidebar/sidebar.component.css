@@ -44,9 +44,10 @@
   .content {
     flex-grow: 1;
     padding: 20px;
-    position: sticky;
-    width: 200rem; /* Adjust the width as needed */
-    margin-top: 40px;
+   position: static;
+   width:100%; /* Adjust the width as needed */
+    margin-top: 80px;
+    margin-left: 100px;
 }
   .submenu.open {
     display: block;
@@ -55,5 +56,5 @@
 
 .rotate {
     transform: rotate(90deg);
-  }
+}
   
