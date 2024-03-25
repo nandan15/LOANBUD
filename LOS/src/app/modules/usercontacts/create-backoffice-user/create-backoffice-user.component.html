@@ -4,38 +4,44 @@
     <button color="primary" mat-flat-button>Open All</button>
   </div>
   <div class="section">
-    <div>
-      <label for="email" style="display: block;">Email</label>
-      <input style="width: 600px; height: 40px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="email" id="email" placeholder="Enter Email">
+    <div class="input-group">
+        <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter Email">
+        </div>
+        <div class="input-field">
+            <label for="confirm-email">Confirm Email</label>
+            <input type="email" id="confirm-email" placeholder="Confirm Email">
+        </div>
     </div>
-    <div>
-      <label for="confirm-email" style="display: block;margin-left: 30px; ">Confirm Email</label>
-      <input style="width: 600px; height: 40px;margin-left: 30px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="email" id="confirm-email" placeholder="Confirm Email">
+    <div class="input-group">
+        <div class="input-field">
+            <label for="first-name">Employee First Name</label>
+            <input type="text" id="first-name" placeholder="Enter Employee First Name">
+        </div>
+        <div class="input-field">
+            <label for="last-name">Employee Last Name</label>
+            <input type="text" id="last-name" placeholder="Enter Employee Last Name">
+        </div>
     </div>
-    <div>
-      <label for="first-name" style="display: block;margin-top: 20px; ">Employee First Name</label>
-      <input style="width: 600px; height: 40px;border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="text" id="first-name" placeholder="Enter Employee First Name">
-    </div>
-    <div>
-      <label for="last-name" style="display: block; margin-left: 30px;margin-top: 20px;">Employee Last Name</label>
-      <input style="width: 600px; height: 40px;margin-left: 30px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="text" id="last-name" placeholder="Enter Employee Last Name">
-    </div>
-
-    <div>
-      <label for="branch" style="display: block;margin-top: 20px;">Exclusively Assign to a Branch</label>
-      <select id="branch" style="width: 600px; height: 40px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);">
+    <div class="input-group">
+    <div class="input-field">
+      <label for="branch" style="display: block; margin-top: 20px;">Exclusively Assign to a Branch</label>
+      <select id="branch" style=" width:100%; height: 40px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);">
         <option value="">  - Select Branch -  </option>
         <!-- Options for branches go here -->
         <option value="1">Bangalore</option>
       </select>
       <h5>Note: If you do not select any branch, the employee user will have access to all loan files for all branches.</h5>
     </div>
-    <div>
-      <label for="last-name" style="display: block; margin-left: 30px;margin-top: 20px;">Company Name</label>
-      <input style="width: 600px; height: 40px;margin-left: 30px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="text" id="last-name" placeholder="Enter Company Name">
+    <div class="input-field">
+      <label for="company-name" style="display: block; margin-top: 20px;">Company Name</label>
+      <input  type="text" id="company-name" placeholder="Enter Company Name">
     </div>
-    <div>
-      <label for="role" style="display: block;margin-top: 20px;">Role</label>
+    </div>
+    <div class="input-group">
+      <div class="input-field">
+      <label for="role" style="display: block; margin-top: 20px;">Role</label>
       <div class="custom-dropdown">
         <select class="ui search selection dropdown">
           <option value="">Select </option>
@@ -51,23 +57,29 @@
         <button class="plus"> <i class="fa fa-plus-circle"></i></button> 
       </div>
     </div>
-    <div>
-        <label for="password" style="display: block; margin-left: 30px;margin-top: 20px;">Password</label>
-        <input style="width: 600px; height: 40px;margin-left: 30px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="text"  placeholder="">
-      </div>
-      <div>
-        <label for="confirm-password" style="display: block; margin-top: 20px;">Confirm Password</label>
-        <input style="width: 600px; height: 40px;border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);" type="text"  placeholder="">
-      </div>
-    <div>
-        <label style="display: block;margin-top: 20px; margin-left: 30px;">Allow Login Back to Office?</label>
-        
-        <label style=" margin-left: 30px;" class="switch">
-            <input type="checkbox" checked>
-            <span class="slider round"></span>
-          </label>
+    <div class="input-field">
+    
+      <label for="password" style="display: block; margin-top: 20px;">Password</label>
+      <input type="password" id="password" placeholder="Enter Password">
     </div>
-  </div>
+    </div>
+    <div class="input-group">
+      <div class="input-field">
+      <label for="confirm-password" style="display: block; margin-top: 20px;">Confirm Password</label>
+      <input  type="password" id="confirm-password" placeholder="Confirm Password">
+    </div>
+  
+    <div class="input-field">
+      <label style="display: block; margin-top: 20px;">Allow Login Back to Office?</label>
+      <label style="margin-top: 10px;" class="switch">
+        <input type="checkbox" checked>
+        <span class="slider round"></span>
+      </label>
+    </div>
+    </div>
+</div>
+
+
   <div class="section">
     <mat-accordion class="example-headers-align" style="width: 100%;" multi>
       <!-- #enddocregion multi -->
