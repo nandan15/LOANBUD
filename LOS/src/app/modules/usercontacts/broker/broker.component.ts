@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var $: any;
 
 @Component({
   selector: 'app-broker',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./broker.component.css']
 })
 export class BrokerComponent {
+  constructor() { }
 
+  ngOnInit(): void {
+    $(document).ready(function() {
+      $('#example').DataTable();
+    });
+  }
 }
