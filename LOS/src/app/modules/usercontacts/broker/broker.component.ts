@@ -19,10 +19,10 @@ opendialog():void{
   });
 }
 
-
-  ngOnInit(): void {
-    $(document).ready(function() {
-      $('#example').DataTable();
-    });
-  }
+ngOnInit(): void {
+  $(document).ready(function() {
+    $('#example').DataTable();
+  });
+}
+  
 }

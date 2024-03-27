@@ -1,25 +1,71 @@
-<div class="container">
-    <h4>Add Contact</h4>
-    <table id="example" class="table table-striped table-bordered" style="width:100%">
-        <thead>
-            
-            <tr class="table-info">
-                <th>#</th>
-                <th>COMPANY Name</th>
-                <th>FIRST NAME</th>
-                <th>LAST NAME</th>
-                <th>ROLE</th>
-                <th>EMAIL</th>
-                <th>PHONE</th>
-                <th># OF FILE</th>
-                <th>Actions</th>
-                <th>Save</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="table-Default" style="text-align: center;">
-                <td colspan="10">No records found</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+<div class="main">
+    <h4>Add Employee <span *ngIf="contactsForm.invalid && (contactsForm.dirty || contactsForm.touched)" class="small-font invalid"></span></h4>
+    <form [formGroup]="contactsForm" >
+      <mat-form-field>
+        <mat-label style="color: seagreen">COMPANY NAME</mat-label>
+        <input matInput placeholder="Ex.Wipro" name="CompanyName" [required]="true" formControlName="CompanyName">
+        <mat-hint style="color: red;" *ngIf="contactsForm.get('CompanyName')?.touched && contactsForm.get('CompanyName')?.errors?.['required']">
+            CompanyName is Required
+        </mat-hint>
+      </mat-form-field>
+    <mat-form-field>
+        <mat-label style="color: seagreen">FIRST NAME</mat-label>
+        <input matInput placeholder="Ex. Abhishek" name="FirstName" [required]="true" formControlName="FirstName">
+        <mat-hint style="color: red;" *ngIf="contactsForm.get('FirstName')?.touched && contactsForm.get('FirstName')?.errors?.['required']">
+          FirstName is Required
+        </mat-hint>
+      </mat-form-field>
+    <mat-form-field>
+      <mat-label>LAST NAME</mat-label>
+      <input matInput placeholder="Ex. BK" required formControlName="LastName">
+      <mat-hint style="color: red;" *ngIf="contactsForm.get('LastName')?.touched && contactsForm.get('LastName')?.errors?.['required']">
+        LastName is Required
+      </mat-hint>
+    </mat-form-field>
+    <mat-form-field>
+        <mat-label>ROLE</mat-label>
+        <input matInput placeholder="Ex.Software" required="Role" formControlName="Role">
+        <mat-hint style="color: red;" *ngIf="contactsForm.get('Role')?.touched && contactsForm.get('Role')?.errors?.['Role']">
+            Role is Required
+        </mat-hint>
+      </mat-form-field>
+    <mat-form-field>
+      <mat-label>Enter your email</mat-label>
+      <input  matInput type="email"  placeholder="Sri@example.com" required="email" formControlName="Email">
+      <mat-hint style="color: red;" *ngIf="contactsForm.get('Email')?.touched && contactsForm.get('Email')?.errors?.['required']">
+        Email is Required
+      </mat-hint>
+    </mat-form-field>
+    <mat-form-field hintLabel="Max 10 characters">
+      <mat-label>Phone</mat-label>
+      <input matInput type="text" required placeholder="Ex.9812948399" formControlName="Phone">
+      <!-- <mat-hint style="color: red;" *ngIf="employeeForm.get('Phone')?.touched && employeeForm.get('Phone')?.errors?.['required']">
+        Phone is Required
+      </mat-hint> -->
+      <!-- <mat-hint align="end">{{input.value.length}}/10</mat-hint> -->
+    </mat-form-field>
+    
+    <mat-form-field>
+      <mat-label>OF FILE</mat-label>
+      <input matInput placeholder="FILE" required="FILE" formControlName="FILE">
+      <mat-hint style="color: red;" *ngIf="contactsForm.get('FILE')?.touched && contactsForm.get('FILE')?.errors?.['FILE']">
+        FILE is Required
+      </mat-hint>
+    </mat-form-field>
+    <mat-form-field style="width: 480px;">
+        <mat-label>ACTION</mat-label>
+        <input matInput placeholder="Action" required="Action" formControlName="Action">
+        <mat-hint style="color: red;" *ngIf="contactsForm.get('Action')?.touched && contactsForm.get('Action')?.errors?.['Action']">
+            Action is Required
+        </mat-hint>
+      </mat-form-field>
+      
+      <br>
+          
+    </form>
+    <div class="button-container">
+      <button class="add" mat-raised-button color="primary"(click)="saveContactsData()">ADD</button>
+      <button class="reset" mat-raised-button color="accent" (click)="resetForm()">Reset</button>
+    </div> 
+    <button class="close" mat-raised-button color="warn" (click)="closeForm()">X</button>
+  </div>

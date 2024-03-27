@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ContactsPopupComponent } from '../contacts-popup/contacts-popup.component';
 import { MatDialog } from '@angular/material/dialog';
+declare var $: any;
 
 @Component({
   selector: 'app-contacts',
@@ -25,4 +26,11 @@ dialogRef.afterClosed().subscribe(result=>{
 });
 }
 
+
+
+ngOnInit(): void {
+  $(document).ready(function() {
+    $('#example').DataTable();
+  });
+}
 }
