@@ -7,26 +7,26 @@
     <div class="input-group">
         <div class="input-field">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter Email">
+            <input type="email" style="background-color: rgba(255, 228, 196, 0.623);" id="email" placeholder="Enter Email">
         </div>
         <div class="input-field">
             <label for="confirm-email">Confirm Email</label>
-            <input type="email" id="confirm-email" placeholder="Confirm Email">
+            <input type="email" style="background-color: rgba(255, 228, 196, 0.623);" id="confirm-email" placeholder="Confirm Email">
         </div>
     </div>
     <div class="input-group">
         <div class="input-field">
             <label for="first-name">Employee First Name</label>
-            <input type="text" id="first-name" placeholder="Enter Employee First Name">
+            <input type="text" style="background-color: rgba(255, 228, 196, 0.623);" id="first-name" placeholder="Enter Employee First Name">
         </div>
         <div class="input-field">
             <label for="last-name">Employee Last Name</label>
-            <input type="text" id="last-name" placeholder="Enter Employee Last Name">
+            <input type="text"  style="background-color: rgba(255, 228, 196, 0.623);" id="last-name" placeholder="Enter Employee Last Name">
         </div>
     </div>
     <div class="input-group">
     <div class="input-field">
-      <label for="branch" style="display: block; margin-top: 20px;">Exclusively Assign to a Branch</label>
+      <label for="branch" style="display: block; margin-top: 20px;">Exclusively Assign to a Branch<img src="../../../../assets/icons8-info-48.png"   width="25" height="25" class="d-inline-block align-top"/></label>
       <select id="branch" style=" width:100%; height: 40px; border-radius: 5px; background-color: rgba(255, 228, 196, 0.623);">
         <option value="">  - Select Branch -  </option>
         <!-- Options for branches go here -->
@@ -35,8 +35,8 @@
       <h5>Note: If you do not select any branch, the employee user will have access to all loan files for all branches.</h5>
     </div>
     <div class="input-field">
-      <label for="company-name" style="display: block; margin-top: 20px;">Company Name</label>
-      <input  type="text" id="company-name" placeholder="Enter Company Name">
+      <label for="company-name" style="display: block; margin-top: 20px;">Company Name<img src="../../../../assets/icons8-info-48.png"   width="25" height="25" class="d-inline-block align-top"/></label>
+      <input  type="text"  style="background-color: rgba(255, 228, 196, 0.623);" id="company-name" placeholder="Enter Company Name">
     </div>
     </div>
     <div class="input-group">
@@ -60,19 +60,19 @@
     <div class="input-field">
     
       <label for="password" style="display: block; margin-top: 20px;">Password</label>
-      <input type="password" id="password" placeholder="Enter Password">
+      <input type="password" style="background-color: rgba(255, 228, 196, 0.623);" id="password" placeholder="Enter Password">
     </div>
     </div>
     <div class="input-group">
       <div class="input-field">
       <label for="confirm-password" style="display: block; margin-top: 20px;">Confirm Password</label>
-      <input  type="password" id="confirm-password" placeholder="Confirm Password">
+      <input  type="password" style="background-color: rgba(255, 228, 196, 0.623);" id="confirm-password" placeholder="Confirm Password">
     </div>
   
     <div class="input-field">
-      <label style="display: block; margin-top: 20px;">Allow Login Back to Office?</label>
+      <label style="display: block; margin-top: 20px;">Allow Login Back to Office?<img src="../../../../assets/icons8-info-48.png"  width="25" height="25" class="d-inline-block align-top"/></label>
       <label style="margin-top: 10px;" class="switch">
-        <input type="checkbox" checked>
+        <input type="checkbox" checked >
         <span class="slider round"></span>
       </label>
     </div>
@@ -93,7 +93,61 @@
           <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
         </mat-expansion-panel-header>
     
-        <div>My panel content!</div>
+        <div class="input-group">
+          <div class="input-field">
+            <label for="Time-Zone" style="display: block; ">Time Zone</label>
+            <select id="Time-Zone" style=" width:100%; height: 40px; border-radius: 5px;">
+              <option value="">  - EST (UTC-05)-  </option>
+              <!-- Options for branches go here -->
+              <option value="1">Bangalore</option>
+            </select>
+            </div>
+          <div class="input-field">
+              <label for="Toll-Free/Mainemail" >Toll Free/Main</label>
+              <input type="text" id="Toll-Free/Main"  placeholder="Enter Toll Free/Main">
+          </div>
+         
+      </div>
+      <div class="input-group">
+        <div class="input-field">
+            <label for="Street">Street</label>
+            <input type="Street"  id="Street" placeholder="Enter Street">
+        </div>
+        <div class="input-field">
+            <label for="Local/Direct Phone">Local/Direct Phone</label>
+            <input type="text"  id="Local/Direct Phone" placeholder="Local/Direct Phone">
+        </div>
+    </div>
+    <div class="input-group">
+      <div class="input-field">
+        <label for="state" style="display: block; ">State</label>
+        <select id="state" style=" width:100%; height: 40px; border-radius: 5px;">
+          <option value="">  - Select State -  </option>
+          <!-- Options for branches go here -->
+          <option value="1">Karnataka</option>
+        </select>
+        </div>
+        <div class="input-field">
+          <label for="service" style="display: inline-block; ">Please select service provider if you would like to receive task remainder via sms<img src="../../../../assets/icons8-info-48.png"  width="25" height="25" class="d-inline-block align-top"/></label>
+          <select id="service" style=" width:100%; height: 40px; border-radius: 5px; ">
+            <option value="">  - Select -  </option>
+            <!-- Options for branches go here -->
+            <option value="1">ABC</option>
+          </select>
+          </div>
+  </div>
+ 
+<div class="input-group">
+  <div class="input-field">
+      <label for="zip_code">Zip Code</label>
+      <input type="text" id="zip_code" placeholder="Enter Zip Code">
+  </div>
+  <div class="input-field">
+      <label for="Fax">Fax</label>
+      <input type="text" id="Fax" placeholder="Enter FAX">
+  </div>
+</div>
+
       </mat-expansion-panel>
     </mat-accordion>
   </div>
@@ -104,13 +158,168 @@
         <mat-expansion-panel-header  style="padding-top: 8px;">
           
           <div class="my-panel"  (click)="$event.stopPropagation();">
-            <h3>Editing and Visibility Permissiona</h3>
+            <h3>Editing and Visibility Permissions</h3>
     
           </div>
           <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
         </mat-expansion-panel-header>
-    
-        <div>My panel content!</div>
+        <div class="main">
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to view all "Files" & See Borrower List?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Would you like this employee to be able to change status and substatus if the file is editable for them?</label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allowed to create files?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%; width: 70%;">Allowed to edit files?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-flex; align-items: center; margin-left: 5%;" class="switch">
+            <input type="radio" checked name="edit_files" value="yes">
+            <span class="checkmark"></span>
+            <span style="margin-left: 5px;">Yes</span>
+          </label>
+          <label style="display: inline-flex; align-items: center; " class="switch">
+            <input type="radio" name="edit_files" value="no">
+            <span class="checkmark"></span>
+            <span style="margin-left: 5px;">No</span>
+          </label>
+          <label  class="switch">
+            <input type="radio" name="edit_files" value="no">
+            <span class="checkmark"></span>
+            <span style="margin-left: 5px;">Follow company settings</span>
+          </label>
+        </div>
+        
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allowed to create tasks?</label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allow to Edit or Delete their Own Notes?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allowed to create branch?</label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allowed to see private notes?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to Excel Export File Data?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allowed to see public notes?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to lock/unlock loan information?</label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allow to view Contact List?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to view commission?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allow to change/assign/ branch or broker/agent for a file?</label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to edit commission?</label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allowed to see  billing section?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to Edit Bank or Card information?
+          </label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allowed to see Loan Officer?Mortgage Broker List?</label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="parent" style="display: flex;">
+          <label style="width: 65% ;">Allow to Copy Files?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/>
+          </label>
+          <label style="width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="check" style="display: flex;">
+          <label style="margin-left: 10%;">Allowed to see all emails?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+          <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+            <input type="checkbox" checked >
+            <span class="slider round"></span>
+          </label>
+        </div>
+        </div>
+        
       </mat-expansion-panel>
     </mat-accordion>
   </div>
@@ -127,7 +336,115 @@
           <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
         </mat-expansion-panel-header>
     
-        <div>My panel content!</div>
+        <div class="main">
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Notify if Borrowers/Clients upload a documents?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Allowed to delete/replace uploaded docs/e-signed docs/binder docs?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Allowed to share file?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Aloowed to send Client Portal,Login Access Information<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Send File Designation information to Clients with Public notes?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Allow to send fax?</label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Notify if Back Office uers upload a document?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Notify if Branch users upload a documents?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Notify if Back Office users upload a document?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Notify if Branch users upload a document?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Notify if Loan Officer users upload a document?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Notify is Broker users upload a document?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Notify id document upload request is sent to the borrower/client?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Notify if new file is created?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Allowed to message borrower?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+         
+          </div>
       </mat-expansion-panel>
     </mat-accordion>
   </div>
@@ -144,8 +461,65 @@
           <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
         </mat-expansion-panel-header>
     
-        <div>My panel content!</div>
+        <div class="main">
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Enable Two-Factor Authentication(2FA)?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Allowed to see dashboard?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Allowed to see othes tab?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="check" style="display: flex;">
+            <label style="margin-left: 10%;">Enable Marketplace Tabs?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Display any automations that are triggered by this users?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Allow to access 3rd party Services Tab?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="parent" style="display: flex;">
+            <label style="width: 65% ;">Enable Pricing Engine?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+            <label style="width:10.5%;" class="switch">
+              <input type="checkbox" checked >
+              <span class="slider round"></span>
+            </label>
+          </div>
+         
+         
       </mat-expansion-panel>
     </mat-accordion>
   </div>
+  <div class="save">
+  <button style="margin-top: 10px; " color="primary" mat-flat-button>Save</button>
+  <button style="margin-top: 10px;" mat-flat-button>Reset</button>
+</div>
 </div>

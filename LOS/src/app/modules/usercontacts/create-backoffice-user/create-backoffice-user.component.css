@@ -174,11 +174,11 @@ height: fit-content;
 .input-group {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px; /* Adjust spacing between input groups */
+    margin-bottom: 20px; 
 }
 
 .input-field {
-    width: 45%; /* Adjust width as needed */
+    width: 45%; 
 }
 
 .input-field label {
@@ -190,6 +190,81 @@ height: fit-content;
     width: 100%;
     height: 40px;
     border-radius: 5px;
-    background-color: rgba(255, 228, 196, 0.623);
+  
     box-sizing: border-box; /* Include padding and border in the width */
 }
+.save{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  gap:10px;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.parent,
+.check {
+  width: 48%; /* Adjust width to fit two items in a row with some spacing */
+}
+
+/* Additional styles to preserve the original appearance */
+.parent,
+.check {
+  display: flex;
+  align-items: center;
+}
+
+/* Add margin to the right of each parent to create space between columns */
+.parent {
+  margin-right: 2%;
+}
+
+/* Adjust label width for better alignment */
+.parent label,
+.check label {
+  width: 60%;
+}
+
+.checkmark {
+  position: relative; /* Change position to relative */
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px; /* Adjust width if needed */
+  height: 25px; /* Adjust height if needed */
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.check {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 10px; /* Adjusted margin for better spacing */
+}
+
+input[type="radio"] {
+  position: absolute; /* Position the radio button absolutely */
+  opacity: 0; /* Hide the default radio button */
+  cursor: pointer;
+}
+
+input:checked + .checkmark {
+  background-color: #2196F3;
+}
+
+input:checked + .checkmark:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
