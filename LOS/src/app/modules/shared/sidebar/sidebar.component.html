@@ -10,36 +10,35 @@
         <a href="#">Submenu Item 3</a>
     </div>
 
-    <a href="#" (click)="toggleSubMenu(0)">Create Loan <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[0]"></i></a>
+    <a (click)="toggleSubMenu(0)">Create Loan <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[0]"></i></a>
     <div class="submenu" [class.open]="isOpen[0]">
         <a href="#">Submenu Item 1</a>
         <a href="#">Submenu Item 2</a>
         <a href="#">Submenu Item 3</a>
     </div>
 
-    <a href="#" (click)="toggleSubMenu(1)" >Pipeline <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[1]"></i></a>
+    <a  (click)="toggleSubMenu(1)" >Pipeline <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[1]"></i></a>
     <div class="submenu" [class.open]="isOpen[1]" >
         <a routerLink="/pipeline/pipelinemain">-     Pipeline - Main</a>
         <a href="#">-     My Assigned Files</a>
         <a href="#">-     Soft Credit Pulls</a>
     </div>
 
-     <a href="#" (click)="toggleSubMenu(2)">User/Contacts <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[2]"></i></a>
+     <a  (click)="toggleSubMenu(2)">User/Contacts <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[2]"></i></a>
     <div class="submenu" [class.open]="isOpen[2]">
         <!-- <a href="#" (click)="toggleSubMenu(2)">Submenu Item 1<i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[2]"></i></a>
         <div class="submenu" [class.open]="isOpen[2]">
             
         </div> -->
-        <a href="#">Submenu Item 1</a>
-        <a href="#">Submenu Item 2</a>
-        <a href="#">Back Office</a>
+        <a routerLink="/usercontacts/back-office">Back Office</a>
+        <a routerLink="/usercontacts/branch">Branch List</a>
         <a routerLink="/usercontacts/createbackofficeuser">Create Back</a>
         <a routerLink="/usercontacts/broker">Broker</a>
         <a routerLink="/usercontacts/contacts">Contacts</a>
     </div>
 
 
-    <a href="#" (click)="toggleSubMenu(3)">Calendar <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[3]"></i></a>
+    <a  (click)="toggleSubMenu(3)">Calendar <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[3]"></i></a>
     <div class="submenu" [class.open]="isOpen[3]">
         <a href="#">Submenu Item 1</a>
         <a href="#">Submenu Item 2</a>

@@ -18,6 +18,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import { ContactsPopupComponent } from './contacts-popup/contacts-popup.component';
 import { BrokerPopupComponent } from './broker-popup/broker-popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { CreatebackofficeComponent } from './createbackoffice/createbackoffice.component';
 @NgModule({
   declarations: [
    BackOfficeComponent,
@@ -29,7 +30,8 @@ import { MatDialogModule } from '@angular/material/dialog';
    CreateBackofficeUserComponent,
    UsercontactsComponent,
    ContactsPopupComponent,
-   BrokerPopupComponent
+   BrokerPopupComponent,
+   CreatebackofficeComponent,
   ],
   imports: [
     CommonModule,
