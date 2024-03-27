@@ -19,6 +19,8 @@ import { ContactsPopupComponent } from './contacts-popup/contacts-popup.componen
 import { BrokerPopupComponent } from './broker-popup/broker-popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CreatebackofficeComponent } from './createbackoffice/createbackoffice.component';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input';
 @NgModule({
   declarations: [
    BackOfficeComponent,
@@ -40,6 +42,8 @@ import { CreatebackofficeComponent } from './createbackoffice/createbackoffice.c
     MatExpansionModule,
     MatDatepickerModule,
     MatDialogModule,
+    MatInputModule,
+    MatNativeDateModule,
     MatIconModule,
     ReactiveFormsModule,
     MatFormFieldModule

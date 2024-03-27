@@ -1,69 +1,71 @@
 <div class="main">
-    <h4>Add Broker <span *ngIf="brokerform.invalid && (brokerform.dirty || brokerform.touched)" class="small-font invalid"></span></h4>
-    <form [formGroup]="brokerform" >
+  <h4>Add Broker <span *ngIf="brokerform.invalid && (brokerform.dirty || brokerform.touched)" class="small-font invalid">Invalid Form</span></h4>
+  <form [formGroup]="brokerform">
+    <mat-form-field>
+      <mat-label >BrokerName</mat-label>
+      <input matInput placeholder="Ex. BrokerName" formControlName="BrokerName">
+      <mat-error *ngIf="brokerform.get('BrokerName')?.invalid && brokerform.get('BrokerName')?.touched">
+        BrokerName is Required
+      </mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label >Company</mat-label>
+      <input matInput placeholder="Ex. Company" formControlName="Company">
+      <mat-error *ngIf="brokerform.get('Company')?.invalid && brokerform.get('Company')?.touched">
+        Company is Required
+      </mat-error>
+    </mat-form-field>
       <mat-form-field>
-        <mat-label style="color: seagreen">BrokerName</mat-label>
-        <input matInput placeholder="Ex.BrokerName" name="BrokerName" [required]="true" formControlName="BrokerName">
-        <mat-hint style="color: red;" *ngIf="brokerform.get('BrokerName')?.touched && brokerform.get('BrokerName')?.errors?.['required']">
-          BrokerName is Required
-        </mat-hint>
+          <mat-label>BranchLoanOfficer</mat-label>
+          <input matInput placeholder="Ex. BranchLoanOfficer" formControlName="BranchLoanOfficer">
+          <mat-error *ngIf="brokerform.get('BranchLoanOfficer')?.invalid && brokerform.get('BranchLoanOfficer')?.touched">
+              BranchLoanOfficer is Required
+          </mat-error>
       </mat-form-field>
-    <mat-form-field>
-        <mat-label style="color: seagreen">Company</mat-label>
-        <input matInput placeholder="Ex. Company" name="Company" [required]="true" formControlName="Company">
-        <mat-hint style="color: red;" *ngIf="brokerform.get('Company')?.touched && brokerform.get('Company')?.errors?.['required']">
-          Company is Required
-        </mat-hint>
+      <mat-form-field>
+          <mat-label>BrokerType</mat-label>
+          <input matInput placeholder="Ex. BrokerType" formControlName="BrokerType">
+          <mat-error *ngIf="brokerform.get('BrokerType')?.invalid && brokerform.get('BrokerType')?.touched">
+              BrokerType is Required
+          </mat-error>
       </mat-form-field>
-    <mat-form-field>
-      <mat-label>BranchLoanOfficer</mat-label>
-      <input matInput placeholder="Ex. BranchLoanOfficer" required formControlName="BranchLoanOfficer">
-      <mat-hint style="color: red;" *ngIf="brokerform.get('BranchLoanOfficer')?.touched && brokerform.get('BranchLoanOfficer')?.errors?.['required']">
-        BranchLoanOfficer is Required
-      </mat-hint>
-    </mat-form-field>
-    <mat-form-field>
-        <mat-label>BrokerType</mat-label>
-        <input matInput placeholder="Ex.BrokerType" required="BrokerType" formControlName="BrokerType">
-        <mat-hint style="color: red;" *ngIf="brokerform.get('BrokerType')?.touched && brokerform.get('BrokerType')?.errors?.['Role']">
-          BrokerType is Required
-        </mat-hint>
+      <mat-form-field>
+          <mat-label>FileCount</mat-label>
+          <input matInput type="number" placeholder="FileCount" formControlName="FileCount">
+          <mat-error *ngIf="brokerform.get('FileCount')?.invalid && brokerform.get('FileCount')?.touched">
+              FileCount is Required
+          </mat-error>
       </mat-form-field>
-    <mat-form-field>
-      <mat-label>FileCount</mat-label>
-      <input  matInput type="FileCount"  placeholder="FileCount" required="FileCount" formControlName="FileCount">
-      <mat-hint style="color: red;" *ngIf="brokerform.get('FileCount')?.touched && brokerform.get('FileCount')?.errors?.['required']">
-        FileCount is Required
-      </mat-hint>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>ApprovalStatus</mat-label>
-      <input  matInput type="ApprovalStatus"  placeholder="ApprovalStatus" required="ApprovalStatus" formControlName="ApprovalStatus">
-      <mat-hint style="color: red;" *ngIf="brokerform.get('ApprovalStatus')?.touched && brokerform.get('ApprovalStatus')?.errors?.['required']">
-        ApprovalStatus is Required
-      </mat-hint>
-    </mat-form-field>
-    <mat-form-field>
-      <mat-label>Lastlogin</mat-label>
-      <input matInput placeholder="Lastlogin" required="Lastlogin" formControlName="Lastlogin">
-      <mat-hint style="color: red;" *ngIf="brokerform.get('Lastlogin')?.touched && brokerform.get('Lastlogin')?.errors?.['Lastlogin']">
-        Lastlogin is Required
-      </mat-hint>
-    </mat-form-field>
-    <mat-form-field style="width: 480px;">
-        <mat-label>Actions</mat-label>
-        <input matInput placeholder="Actions" required="Actions" formControlName="Actions">
-        <mat-hint style="color: red;" *ngIf="brokerform.get('Actions')?.touched && brokerform.get('Actions')?.errors?.['Actions']">
-            Action is Required
-        </mat-hint>
+      <mat-form-field>
+          <mat-label>ApprovalStatus</mat-label>
+          <input matInput placeholder="ApprovalStatus" formControlName="ApprovalStatus">
+          <mat-error *ngIf="brokerform.get('ApprovalStatus')?.invalid && brokerform.get('ApprovalStatus')?.touched">
+              ApprovalStatus is Required
+          </mat-error>
       </mat-form-field>
-      
+      <mat-form-field>
+          <mat-label>Lastlogin</mat-label>
+          <input matInput [matDatepicker]="picker" placeholder="Lastlogin" formControlName="Lastlogin">
+          <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+          <mat-error *ngIf="brokerform.get('Lastlogin')?.invalid && brokerform.get('Lastlogin')?.touched">
+              Lastlogin is Required
+          </mat-error>
+      </mat-form-field>
+      <mat-form-field style="width: 480px;">
+          <mat-label>Actions</mat-label>
+          <input matInput placeholder="Actions" formControlName="Actions">
+          <mat-error *ngIf="brokerform.get('Actions')?.invalid && brokerform.get('Actions')?.touched">
+              Actions is Required
+          </mat-error>
+      </mat-form-field>
+
       <br>
-          
-    </form>
-    <div class="button-container">
-      <button class="add" mat-raised-button color="primary"(click)="saveBrokerData()">ADD</button>
-      <button class="reset" mat-raised-button color="accent" (click)="resetForm()">Reset</button>
-    </div> 
-    <button class="close" mat-raised-button color="warn" (click)="closeForm()">X</button>
-  </div>
+
+      <div class="button-container">
+          <button class="add" mat-raised-button color="primary" (click)="saveBrokerData()">ADD</button>
+          <button class="reset" mat-raised-button color="accent" (click)="resetForm()">Reset</button>
+      </div>
+      <button class="close" mat-raised-button color="warn" (click)="closeForm()">X</button>
+  </form>
+</div>
