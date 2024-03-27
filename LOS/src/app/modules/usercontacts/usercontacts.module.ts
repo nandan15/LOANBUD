@@ -15,6 +15,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { ContactsPopupComponent } from './contacts-popup/contacts-popup.component';
+import { BrokerPopupComponent } from './broker-popup/broker-popup.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
    BackOfficeComponent,
@@ -24,7 +27,9 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
    ContactsComponent,
    BorrowersComponent,
    CreateBackofficeUserComponent,
-   UsercontactsComponent
+   UsercontactsComponent,
+   ContactsPopupComponent,
+   BrokerPopupComponent
   ],
   imports: [
     CommonModule,
@@ -32,6 +37,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     MatButtonModule,
     MatExpansionModule,
     MatDatepickerModule,
+    MatDialogModule,
     MatIconModule,
     ReactiveFormsModule,
     MatFormFieldModule
