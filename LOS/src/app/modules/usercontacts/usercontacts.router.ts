@@ -18,7 +18,7 @@ const usercontactsRoutes:Routes=[
         {path:'createbackofficeuser',component:CreateBackofficeUserComponent},
         {path:'branch',component:BranchComponent},
         {path:'broker',component:BrokerComponent},
-        {path:'loan-officer',component:LoanOfficerComponent},
+        {path:'loanofficer',component:LoanOfficerComponent},
         {path:'contacts',component:ContactsComponent},
         {path:'borrowers',component:BorrowersComponent},
         {path:'createbackoffice',component:CreatebackofficeComponent},
