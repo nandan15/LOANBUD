@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare var $: any; // Declare jQuery
 
 @Component({
   selector: 'app-borrowers',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class BorrowersComponent {
 
+
+  ngOnInit(): void {
+    $(document).ready(function() {
+      $('#example').DataTable();
+    });
+  }
 }

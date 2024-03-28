@@ -22,6 +22,7 @@ const usercontactsRoutes:Routes=[
         {path:'contacts',component:ContactsComponent},
         {path:'borrowers',component:BorrowersComponent},
         {path:'createbackoffice',component:CreatebackofficeComponent},
+        {path:'borrowers',component:BorrowersComponent},
         
         
     ]}
