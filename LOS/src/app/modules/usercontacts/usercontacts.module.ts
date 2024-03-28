@@ -35,6 +35,7 @@ import { CreateLoanOfficerComponent } from './create-loan-officer/create-loan-of
    ContactsPopupComponent,
    BrokerPopupComponent,
    CreatebackofficeComponent,
+
    CreateLoanOfficerComponent,
   ],
   imports: [
