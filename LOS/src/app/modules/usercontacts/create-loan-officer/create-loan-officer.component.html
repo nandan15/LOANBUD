@@ -1,0 +1,342 @@
+<div class="container">
+    <div class="header">
+        <button class="btn" style="background-color:#007bff ;    padding: 10px 20px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;">Create Loan Officer</button>
+        <button style="    padding: 10px 20px;
+            color: #5f5d5d;
+        background-color: #c6c8ca;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+        margin-right: 10px;">Web Form Integration</button>
+        <button style="    padding: 10px 20px;
+        color: #5f5d5d;
+        background-color: #c6c8ca;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-right: 10px;">Status</button>
+       
+    </div>
+    <div>
+        <button style="background-color:#007bff ;    padding: 10px 20px;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;">Open All</button>
+    </div>
+</div>
+<div class="section">
+    <mat-accordion class="example-headers-align" style="width: 100%;" multi>
+        <!-- #enddocregion multi -->
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header  style="padding-top: 8px;background-color: rgba(211, 211, 211, 0.397);">
+            
+            <div class="my-panel"  (click)="$event.stopPropagation();">
+              <h3>Geneal Information </h3>
+      
+            </div>
+            <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
+          </mat-expansion-panel-header>
+      
+          <div class="input-group">
+            <div class="input-field">
+              <label for="email" style="display: block; ">Email*</label>
+              <div style="display: flex;width: 100%;">
+              <input type="email" style="background-color:lightgray;" id="Toll-Free/Main"  placeholder="Enter Email">
+              <button style="position: absolute;
+              top: 69%;
+           left:41.8%;
+              width:40px;
+              border-top-right-radius: 5px;
+              border-bottom-right-radius: 5px;
+              background-color:lightgray;
+              font-size: 20px;
+              height: 40px;
+              border:none;
+              border-left: solid  gray 1px;
+              
+              transform: translateY(-50%);
+              cursor: pointer;"><i class="fa fa-pencil"></i></button>
+              </div>
+              </div>
+        </div>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="first-name" >First Name</label>
+                <input type="text" id="first-name" style="background-color: bisque;" placeholder="Enter First-Name">
+            </div>
+            
+                <div class="input-field">
+                    <label for="last-name" >Last Name</label>
+                    <input type="text" id="last-name" style="background-color: bisque;"  placeholder="Enter Last-Name">
+                </div>
+                
+                </div>
+                <div class="input-group">
+                    <div class="input-field">
+                        <label for="company" >Company</label>
+                        <input type="text" id="company" style="background-color: bisque;" placeholder="Enter Company">
+                    </div>
+                    
+            <div class="check" style="display: flex;">
+                
+                <label style="margin-left: 10%;">Allowed to Login?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+                <label style="display: inline-block; width:10.5%;" class="switch">
+                  <input type="checkbox" checked >
+                  <span class="slider round"></span>
+                </label>
+    
+              </div>
+          </div>
+          <div class="input-group">
+            <div class="input-field">
+                <label for="zip_code">Phone Number/Toll Free</label>
+                <input type="text" id="zip_code" placeholder="1800-243934-12">
+            </div>
+            <div class="input-field">
+                <label for="Fax">Phone Number</label>
+                <input type="number" id="Fax" style="background-color: bisque;" placeholder="678967564565">
+            </div>
+          </div>
+   
+          <div class="input-group">
+            <div class="input-field">
+              <label for="state" style="display: block; ">Service Provider</label>
+              <select id="state" style=" width:100%; height: 40px; border-radius: 5px;">
+                <option value="">  - Select -  </option>
+                <!-- Options for branches go here -->
+                <option value="1">Karnataka</option>
+              </select>
+              </div>
+              <div class="input-field">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="7901 4th St N">
+                </div>
+        </div>
+        <div class="input-group">
+            <div class="input-field">
+                <label for="suite">Suite #</label>
+                <input type="text" id="suite" placeholder="1800-243934-12">
+            </div>
+            <div class="input-field">
+                <label for="city">City</label>
+                <input type="number" id="city"  placeholder="Ex. Bangalore">
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-field">
+              <label for="state" style="display: block; ">State</label>
+              <select id="state" style=" width:100%; height: 40px; border-radius: 5px;">
+                <option value="">  - Select -  </option>
+                <!-- Options for branches go here -->
+                <option value="1">Karnataka</option>
+              </select>
+              </div>
+              <div class="input-field">
+                <label for="zip_code">Zip Code</label>
+                <input type="text" id="zip_code" placeholder="Ex. 560109">
+                </div>
+        </div>
+        <div class="input-group">
+        <div class="check">
+            <div class="child" style="display: block;">
+            <label>Agent Type</label>
+            <div style="display: flex;">
+            <label  class="switch">
+              <input type="radio" checked name="edit_files" value="loan_officer">
+              <span class="checkmark"></span>
+              <span style="width: fit-content;">Loan Officer</span>
+            </label>
+           
+            <label  class="switch">
+              <input style="margin-left: 45px;" type="radio" name="edit_files" value="broker">
+              <span class="checkmark"></span>
+              <span >Broker</span>
+            </label>
+            </div>
+            </div>
+            </div>
+            <div class="input-field">
+                <label for="license">License #<img src="../../../../assets/icons8-info-48.png"  width="25" height="25" class="d-inline-block align-top"/></label>
+                <input type="text" id="license" placeholder="Ex. 560109">
+                </div>
+            </div>
+            <div class="input-group">
+                <div class="input-field">
+                    <label for="prefered">Preferred Communication</label>
+                    <input type="text" id="prefered" placeholder="Please Select Prefered C">
+                </div>
+                <div class="input-field">
+                    <label for="website">Website</label>
+                    <input type="text" id="website"  placeholder="https://loadbud.ai/Angela">
+                </div>
+              </div>
+              
+                <label style="background-color: lightgray;width:100%;padding:10px;font-weight:bolder;height: 40px;border-radius: 5px;">License Information</label>
+                <div class="content">
+                    <div style="display: flex;">
+                        <!-- First set of radio buttons -->
+                        <div style="width: 50%; margin-right: 20px;">
+                            <label for="company_nmls">Do you have Company NMLS #?</label><br>
+                            <label class="switch">
+                                <input type="radio" checked name="company_nmls" value="yes">
+                                <span class="checkmark"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="switch" style="margin-left: 10px;">
+                                <input type="radio" name="company_nmls" value="no">
+                                <span class="checkmark"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                
+                        <!-- Second set of radio buttons -->
+                        <div style="width: 50%;">
+                            <label for="personal_nmls">Do you have Personal NMLS #?</label><br>
+                            <label class="switch">
+                                <input type="radio" checked name="personal_nmls" value="yes">
+                                <span class="checkmark"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="switch" style="margin-left: 10px;">
+                                <input type="radio" name="personal_nmls" value="no">
+                                <span class="checkmark"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                
+                    <!-- Add space between the sections -->
+                    <div style="margin-top: 20px;"></div>
+                
+                    <div style="display: flex;">
+                        <!-- Third set of radio buttons -->
+                        <div style="width: 50%; margin-right: 20px;">
+                            <label for="company_license">Do you have Company State License #?</label><br>
+                            <label class="switch">
+                                <input type="radio" checked name="company_license" value="yes">
+                                <span class="checkmark"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="switch" style="margin-left: 10px;">
+                                <input type="radio" name="company_license" value="no">
+                                <span class="checkmark"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                
+                        <!-- Fourth set of radio buttons -->
+                        <div style="width: 50%;">
+                            <label for="personal_license">Do you have Personal State License #?</label><br>
+                            <label class="switch">
+                                <input type="radio" checked name="personal_license" value="yes">
+                                <span class="checkmark"></span>
+                                <span>Yes</span>
+                            </label>
+                            <label class="switch" style="margin-left: 10px;">
+                                <input type="radio" name="personal_license" value="no">
+                                <span class="checkmark"></span>
+                                <span>No</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="main" style="width: 100%;display: flex;gap:10px;margin-top: 20px;margin-left: 50px;" >
+                    <div class="child1" style="width: 100%; display: flex; align-items: left;">
+                        <mat-accordion class="example-headers-align" style="width: 100%;" multi>
+                            <!-- #enddocregion multi -->
+                            <mat-expansion-panel hideToggle style="width: 80%;">
+                                <mat-expansion-panel-header style="padding-top: 8px; background-color: rgba(211, 211, 211, 0.397); display: flex; align-items: center;">
+                                    <div class="my-panel" (click)="$event.stopPropagation();">
+                                        <h3>Company State Information #</h3>
+                                    </div>
+                                    <button class="child" style="width: fit-content; height: fit-content; background-color: rgba(66, 183, 204, 0.295); border-radius: 5px; border-color: none; border: none; margin-left: auto;"><mat-icon style="padding-top: 3px; color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
+                                </mat-expansion-panel-header>
+                                <div class="input-group" style="display: flex; align-items: center; width: 70%;">
+                                    <div class="input-field" style="width: 40%;">
+                                        <label for="state" style="display: block;">State</label>
+                                        <select id="state" style="width: 100%; height: 30px; border-radius: 5px;">
+                                            <option value="">- Select -</option>
+                                            <!-- Options for branches go here -->
+                                            <option value="1">Karnataka</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field" style="position: relative;">
+                                        <label for="state_license">State License #</label>
+                                        <input type="text" id="state_license" placeholder="Ex. 560109">
+                                        <div style="position: absolute; left:200px; top:25px; display: flex;gap:10px;">
+                                            <button style="background-color: rgb(0, 195, 255);padding:8px;border:none;border-radius: 5px;font-size:26px;font-weight: 1000;color:white" ><mat-icon>add</mat-icon></button>
+                                            <button  style="background-color: rgb(255, 0, 0);padding:8px;border:none;border-radius: 5px;font-size:26px;font-weight: 1000;color:white"><mat-icon>remove</mat-icon></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </div>
+                    
+                    <div class="child" style="width:100%;">
+                        <mat-accordion class="example-headers-align" style="width: 100%;" multi>
+                            <!-- #enddocregion multi -->
+                            <mat-expansion-panel hideToggle style="width: 80%;">
+                                <mat-expansion-panel-header style="padding-top: 8px; background-color: rgba(211, 211, 211, 0.397); display: flex; align-items: center;">
+                                    <div class="my-panel" (click)="$event.stopPropagation();">
+                                        <h3>Personal State Information #</h3>
+                                    </div>
+                                    <button class="child" style="width: fit-content; height: fit-content; background-color: rgba(66, 183, 204, 0.295); border-radius: 5px; border-color: none; border: none; margin-left: auto;"><mat-icon style="padding-top: 3px; color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
+                                </mat-expansion-panel-header>
+                                <div class="input-group" style="display: flex; align-items: center; width: 70%;">
+                                    <div class="input-field" style="width: 40%;">
+                                        <label for="persoanl_state" style="display: block;">State</label>
+                                        <select id="persoanl_state" style="width: 100%; height: 30px; border-radius: 5px;">
+                                            <option value="">- Select -</option>
+                                            <!-- Options for branches go here -->
+                                            <option value="1">Karnataka</option>
+                                        </select>
+                                    </div>
+                                    <div class="input-field" style="position: relative;">
+                                        <label for="persoanal_state_license">State License #</label>
+                                        <input type="text" id="persoanal_state_license" placeholder="Ex. 560109">
+                                        <div style="position: absolute; left:200px; top:25px; display: flex;gap:10px;">
+                                            <button style="background-color: rgb(0, 195, 255);padding:8px;border:none;border-radius: 5px;font-size:26px;font-weight: 1000;color:white" ><mat-icon>add</mat-icon></button>
+                                            <button  style="background-color: rgb(255, 0, 0);padding:8px;border:none;border-radius: 5px;font-size:26px;font-weight: 1000;color:white"><mat-icon>remove</mat-icon></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </div>
+                </div>
+                <div class="parent" style="margin-top: 20px;width:100%;">
+                    <div class="input-group">
+                        <div class="input-field">
+                        <label>States Authorized to Originate</label>
+                        <input type="text" id="originate" placeholder="Please Select State">
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                    
+                    </div>
+                    <div class="input-group" style="margin-top: 50px;">
+                        <div class="input-field">
+                        <label>DRE#</label>
+                        <input type="text" id="dre">
+                        </div>
+                        <div class="input-field">
+                               <label>Assigned To Branch(s) *<img src="../../../../assets/icons8-info-48.png"width="20" height="20"/></label>    
+                               <h5>You need to link this Loan/Officer/Broker to at least 1 branch </h5> 
+                        </div>
+                    </div> 
+        </mat-expansion-panel>
+      </mat-accordion>
+     

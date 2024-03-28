@@ -21,6 +21,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { CreatebackofficeComponent } from './createbackoffice/createbackoffice.component';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
+import { CreateLoanOfficerComponent } from './create-loan-officer/create-loan-officer.component';
 @NgModule({
   declarations: [
    BackOfficeComponent,
@@ -34,6 +35,7 @@ import {MatInputModule} from '@angular/material/input';
    ContactsPopupComponent,
    BrokerPopupComponent,
    CreatebackofficeComponent,
+   CreateLoanOfficerComponent,
   ],
   imports: [
     CommonModule,
