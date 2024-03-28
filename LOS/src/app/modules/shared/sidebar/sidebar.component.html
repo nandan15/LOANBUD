@@ -33,8 +33,18 @@
         <a routerLink="/usercontacts/createbackofficeuser">Create Back-Office User</a>
         </div>
         <a routerLink="/usercontacts/branch">Branch List</a>
-        <a routerLink="/usercontacts/broker">Broker</a>
-        <a routerLink="/usercontacts/contacts">Contacts</a>
+        <a (click)="toggleSubMenu(2)">Broker<i class="fas fa-chevron-right-icon" [class.rotate]="isOpen[2]"></i></a>
+        <div class="submenu"[class.open]="isOpen[2]">
+            <a routerLink="/usercontacts/broker">Broker List</a>
+            <a routerLink="/usercontacts/createagent">Create Agent/Broker</a>
+        </div>
+       <a (click)="toggleSubMenu(2)">Loan Officer<i class="fas fa-chevron-right-icon"[class.rotate]="isOpen[2]"></i></a>
+       <div class="submenu"[class.open]="isOpen[2]">
+    <a routerLink="/usercontacts/loanofficer">Loan Officer List</a>
+    <a routerLink="/usercontacts/createloanoffice">Create Loan Officer</a>
+    </div>       
+    
+    <a routerLink="/usercontacts/contacts">Contacts</a>
     </div>
 
 
