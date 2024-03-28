@@ -19,6 +19,7 @@ import { ContactsPopupComponent } from './contacts-popup/contacts-popup.componen
 import { BrokerPopupComponent } from './broker-popup/broker-popup.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { CreatebackofficeComponent } from './createbackoffice/createbackoffice.component';
+
 @NgModule({
   declarations: [
    BackOfficeComponent,
@@ -32,6 +33,7 @@ import { CreatebackofficeComponent } from './createbackoffice/createbackoffice.c
    ContactsPopupComponent,
    BrokerPopupComponent,
    CreatebackofficeComponent,
+
   ],
   imports: [
     CommonModule,

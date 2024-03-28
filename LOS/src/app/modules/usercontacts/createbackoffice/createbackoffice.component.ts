@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
+
 
 @Component({
   selector: 'app-createbackoffice',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./createbackoffice.component.css']
 })
 export class CreatebackofficeComponent {
+  @ViewChild(MatAccordion) accordion!: MatAccordion;
 
+  myButton() {
+    console.log("my button was clicked!");
+  }
 }

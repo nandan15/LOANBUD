@@ -1,1 +1,126 @@
-<p>createbackoffice works!</p>
+<div class="container">
+    <div class="header">
+        <h2>Branch Info</h2>
+        <button color="primary" mat-flat-button>Open All</button>
+    </div>
+    <div class="section">
+        <mat-accordion class="example-headers-align" style="width: 100%;" multi>
+        <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header style="padding-top: 8px;">
+        <div class="my-panel" (click)="$event.stopPropagation();">
+        <h3>Branch Info:</h3>
+        </div>
+        <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
+      </mat-expansion-panel-header>
+       <div class="section">
+        <div class="input-group">
+        <div class="input-field">
+            <label for="email">Email</label>
+            <input type="email" style="background-color: rgba(255, 228, 196, 0.623);" id="email" placeholder="Enter Email">
+        </div>
+        <div class="input-field">
+            <label for="confirm-email">Confirm Email</label>
+            <input type="email" style="background-color: rgba(255, 228, 196, 0.623);" id="confirm-email" placeholder="Confirm Email">
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="first-name">Branch User First Name</label>
+            <input type="text" style="background-color: rgba(255, 228, 196, 0.623);" id="first-name" placeholder="Enter Employee First Name">
+        </div>
+        <div class="input-field">
+            <label for="last-name">Branch User Last Name</label>
+            <input type="text"  style="background-color: rgba(255, 228, 196, 0.623);" id="last-name" placeholder="Enter Employee Last Name">
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="first-name">Branch Name</label>
+            <input type="text" style="background-color: rgba(255, 228, 196, 0.623);" id="first-name" placeholder="Enter Employee First Name">
+        </div>
+        <div class="input-field">
+            <label for="last-name">Company Name</label>
+            <input type="text"  style="background-color: rgba(255, 228, 196, 0.623);" id="last-name" placeholder="Enter Employee Last Name">
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label style="display: block; margin-top: 20px;">Allow Login Back to Office?<img src="../../../../assets/icons8-info-48.png"  width="25" height="25" class="d-inline-block align-top"/></label>
+      <label style="margin-top: 10px;" class="switch">
+        <input type="checkbox" checked >
+        <span class="slider round"></span>
+      </label>
+        </div>
+        <div class="input-field">
+            <label for="Time-Zone" style="display: block; ">Time Zone</label>
+            <select id="Time-Zone" style=" width:100%; height: 40px; border-radius: 5px;">
+              <option value="">  - EST (UTC-05)-  </option>
+              <!-- Options for branches go here -->
+              <option value="1">Bangalore</option>
+            </select>
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="first-name">Toll Free/Main</label>
+            <input type="text" id="Toll-Free/Main">
+        </div>
+        <div class="input-field">
+            <label for="last-name">Adrees</label>
+            <input type="text" id="Adress">
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="first-name">City</label>
+            <input type="text" id="City">
+        </div>
+        <div class="input-field">
+            <label for="last-name">State</label>
+            <select id="state" style=" width:100%; height: 40px; border-radius: 5px;">
+                <option value="">  - Select State -  </option>
+                <!-- Options for branches go here -->
+                <option value="1">Karnataka</option>
+                <option value="1">Goa</option>
+              </select>
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="Street">Zip Code</label>
+            <input type="number"  id="Zip Code">
+        </div>
+        <div class="input-field">
+            <label for="Local/Direct Phone">Cell Number</label>
+            <input type="text"  id="Cell Number">
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="branch" style="display: block; margin-top: 20px;">Please select service provider<img src="../../../../assets/icons8-info-48.png"   width="25" height="25" class="d-inline-block align-top"/></label>
+            <select id="branch" style=" width:100%; height: 40px; border-radius: 5px;">
+              <option value="">  - Select-  </option>
+              <!-- Options for branches go here -->
+              <option value="1">Bangalore</option>
+            </select>
+        </div>
+        <div class="input-field">
+            <label for="Local/Direct Phone">Local/Direct Phone</label>
+            <input type="number"  id="Cell Number">
+        </div>
+    </div>
+    <div class="input-group">
+        <div class="input-field">
+            <label for="Street">Fax</label>
+            <input type="text"  id="Fax">
+        </div>
+        <div class="input-field">
+            <label for="Local/Direct Phone">Website</label>
+            <input type="text"  id="Cell Number"  style="background-color: rgba(142, 203, 211, 0.623);">
+        </div>
+    </div>
+       </div>
+        </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+</div>
