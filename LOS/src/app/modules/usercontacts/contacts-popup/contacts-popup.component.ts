@@ -15,19 +15,19 @@ throw new Error('Method not implemented.');
 @Input() currentContact: Contacts = new Contacts();
 contactsForm!: FormGroup;
 contacts: Contacts[] = [];
-  formBuilder: any;
+ 
   dialogRef: any;
-
+  constructor(private formBuilder: FormBuilder) {}
 ngOnInit(): void {
  this.contactsForm = this.formBuilder.group({
-  COMPANYNAME:['',[Validators.required]],
-  FIRSTNAME:['',[Validators.required]],
-  LASTNAME:['',[Validators.required]],
-  ROLE:['',[Validators.required]],
-  EMAIL:['',[Validators.required]],
+  CompanyName:['',[Validators.required]],
+  FirstName:['',[Validators.required]],
+  LastName:['',[Validators.required]],
+  Role:['',[Validators.required]],
+  Email:['',[Validators.required]],
   Phone:['',[Validators.required]],
-  OFFILE:['',[Validators.required]],
-  ACTION:['',[Validators.required]],
+  FILE:['',[Validators.required]],
+  Action:['',[Validators.required]],
  })
 }
 
@@ -39,9 +39,7 @@ startDate = new Date(1990, 0, 1);
 resetForm(){
   this.contactsForm.reset();
 }
-public closeForm(): void { 
-  this.dialogRef.close();
-  }
+
   public onAddContact(): void {
     this.markAsDirty(this.contactsForm);
   }
@@ -52,5 +50,7 @@ public closeForm(): void {
       group.controls[i].markAsDirty();
     }
   }
-
+  public closeForm(): void { 
+    this.dialogRef.close();
+    }
 }

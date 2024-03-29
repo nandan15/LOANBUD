@@ -9,6 +9,7 @@ import { LoanOfficerComponent } from "./loan-officer/loan-officer.component";
 import { ContactsComponent } from "./contacts/contacts.component";
 import { CreateBackofficeUserComponent } from "./create-backoffice-user/create-backoffice-user.component";
 import { CreatebackofficeComponent } from "./createbackoffice/createbackoffice.component";
+import { CreateLoanOfficerComponent } from "./create-loan-officer/create-loan-officer.component";
 
 
 
@@ -21,7 +22,7 @@ const usercontactsRoutes:Routes=[
         {path:'loanofficer',component:LoanOfficerComponent},
         {path:'contacts',component:ContactsComponent},
         {path:'borrowers',component:BorrowersComponent},
-        {path:'createbackoffice',component:CreatebackofficeComponent},
+        {path:'createloanofficer',component:CreateLoanOfficerComponent},
         {path:'borrowers',component:BorrowersComponent},
         
         
