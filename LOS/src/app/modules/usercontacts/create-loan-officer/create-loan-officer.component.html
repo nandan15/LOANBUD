@@ -40,7 +40,7 @@
           <mat-expansion-panel-header  style="padding-top: 8px;background-color: rgba(211, 211, 211, 0.397);">
             
             <div class="my-panel"  (click)="$event.stopPropagation();">
-              <h3>Geneal Information </h3>
+              <h3>Loan Officer Info </h3>
       
             </div>
             <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
@@ -339,4 +339,341 @@
                     </div> 
         </mat-expansion-panel>
       </mat-accordion>
-     
+ 
+      <mat-accordion class="example-headers-align" style="width: 100%;margin-top: 20px;" multi>
+        <!-- #enddocregion multi -->
+        <mat-expansion-panel hideToggle>
+            <mat-expansion-panel-header style="padding-top: 8px;background-color: rgba(211, 211, 211, 0.397);">
+                <div class="my-panel" (click)="$event.stopPropagation();">
+                    <h3>User Permission Settings</h3>
+                </div>
+                <button class="child" style="width: fit-content;height: fit-content; background-color: rgba(66, 183, 204, 0.295);border-radius: 5px;border-color: none; border: none;"><mat-icon style="padding-top: 3px;color: lightskyblue;">keyboard_arrow_down</mat-icon></button>
+            </mat-expansion-panel-header>
+         
+            <div class="header" style="background-color: rgba(211, 211, 211, 0.397);margin-top: 30px;width:100%;height:40px;color:skyblue;border-radius: 5px;border:solid 1px lightgray;padding:10px;font-weight: bold;font-size:20px;">Editing and Visibilty Perimissions</div>
+           
+                    <div class="main" style="display: flex; flex-direction: column;border-bottom:solid 1px lightgray;border-left:solid 1px lightgray;border-right:solid 1px lightgray;padding:10px;border-radius: 5px;">
+                        <div class="pair" style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <div class="parent" style="display: flex;">
+                                <label style=" width: 100%; display: flex;">Allowed to edit files?<img src="../../../../assets/icons8-info-48.png"  width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block;  width:50%;position: absolute;left:30%;" class="switch">
+                                  <input type="radio" checked name="edit_files" value="yes">
+                                  <span class="checkmark"></span>
+                                  <span style="margin-left: 5px;">Yes</span>
+                                </label>
+                                <label style="display: inline-flex; width:50%;position: absolute;left:35%; " class="switch">
+                                  <input type="radio" name="edit_files" value="no">
+                                  <span class="checkmark"></span>
+                                  <span style="margin-left: 5px;">No</span>
+                                </label>
+                                <br>
+                                <label  class="switch" style="display:block;position: absolute;left:40%;">
+                                    <input type="radio" name="edit_files" value="no">
+                                    <span class="checkmark"></span>
+                                    <span style="margin-left: 5px;">Follow company settings</span>
+                                  </label>
+                              </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Would you like this Loan Officer/Broker to be able to change status and substances if the file is editable for them?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to access private notes?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed to create tasks?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to Excel Export File Data?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed tosee billing section?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to Edit Bank ot Card Information?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed to edit intrest rate / Cost of Capital / Yield spread?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to Lock/unloack loan information?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Display in webforms<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed access to internal Loan Program?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed to copy files?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+              
+                    <div class="header" style="background-color: rgba(211, 211, 211, 0.397);margin-top: 30px;width:100%;height:40px;color:skyblue;border-radius: 5px;border:solid 1px lightgray;padding:10px;font-weight: bold;font-size:20px;">Documents and Notifications</div>
+           
+                    <div class="main" style="display: flex; flex-direction: column;border-bottom:solid 1px lightgray;border-left:solid 1px lightgray;border-right:solid 1px lightgray;padding:10px;border-radius: 5px;">
+                        <div class="pair" style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Nofity if Borrowers/Clients upload a document?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed to delete/replace uploaded docs/e-signed docs/binder docs?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to access & administer docs?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Notify if new file is created?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Send email(Allowed to Send Marketing to Broker's borroowers)<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed to send faxes?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to share files?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Notify if Back Office users upload a document?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Notify if Branch uses upload a document?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Notify if Broker users upload s document<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Notify if document upload request is sent to the borrower/client?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="check" style="display: flex;">
+                                <label style="margin-left: 10%;">Allowed toassign Back Office Employees?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="pair" style="display: flex; justify-content: space-between;">
+                            <div class="parent" style="display: flex;">
+                                <label style="width: 65%;">Allowed to see all brokers?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                <label style="width:10.5%;" class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            </div>
+                            
+                            </div>
+                            <div class="header" style="background-color: rgba(211, 211, 211, 0.397);margin-top: 30px;width:100%;height:40px;color:skyblue;border-radius: 5px;border:solid 1px lightgray;padding:10px;font-weight: bold;font-size:20px;">Special Reports or Features</div>
+           
+                            <div class="main" style="display: flex; flex-direction: column;border-bottom:solid 1px lightgray;border-left:solid 1px lightgray;border-right:solid 1px lightgray;padding:10px;border-radius: 5px;">
+                                <div class="pair" style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                                    <div class="parent" style="display: flex;">
+                                        <label style="width: 65%;">Enanle to two factor Authentiation (2FA)?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="check" style="display: flex;">
+                                        <label style="margin-left: 10%;">Allowed to see dashboard?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="pair" style="display: flex; justify-content: space-between;">
+                                    <div class="parent" style="display: flex;">
+                                        <label style="width: 65%;">Allowed to mass email?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="check" style="display: flex;">
+                                        <label style="margin-left: 10%;">Aloow to view workflow?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="pair" style="display: flex; justify-content: space-between;">
+                                    <div class="parent" style="display: flex;">
+                                        <label style="width: 65%;">Allowed to Submit Offers<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="check" style="display: flex;">
+                                        <label style="margin-left: 10%;">Enable Marketplace Tab?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="pair" style="display: flex; justify-content: space-between;">
+                                    <div class="parent" style="display: flex;">
+                                        <label style="width: 65%;">Display any automations that are triggered by ths user?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    <div class="check" style="display: flex;">
+                                        <label style="margin-left: 10%;">Aloow to View Credit Screen?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="display: inline-block; margin-left: 5%;width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="pair" style="display: flex; justify-content: space-between;">
+                                    <div class="parent" style="display: flex;">
+                                        <label style="width: 65%;">Allow to access #rd Party Services Tab?<img src="../../../../assets/icons8-info-48.png" width="30" height="30" class="d-inline-block align-top"/></label>
+                                        <label style="width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                   
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-field">
+                                        <label for="user_name">User Name<img src="../../../../assets/icons8-info-48.png" width="25" height="25" class="d-inline-block align-top"/></label>
+                                        <input type="text"  id="user_name" placeholder="Enter User Name">
+                                    </div>
+                                    <div class="input-field">
+                                        <label for="password">Passsword<img src="../../../../assets/icons8-info-48.png" width="25" height="25" class="d-inline-block align-top"/></label>
+                                        <input type="text"  id="password" placeholder="Enter Password">
+                                    </div>
+                                </div>
+                                <div class="pair" style="display: flex; justify-content: space-between;">
+                                    <div class="parent" style="display: flex;">
+                                        <label style="width: 65%;">Enable Pricing Engine? </label>
+                                        <label style="width:10.5%;" class="switch">
+                                            <input type="checkbox" checked>
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+                                    </div>
+                                    </div>
+                   
+        </mat-expansion-panel>
+    </mat-accordion>
+
+        <button class="btn">Save</button>
+
+    

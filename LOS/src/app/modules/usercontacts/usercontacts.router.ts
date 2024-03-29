@@ -22,7 +22,7 @@ const usercontactsRoutes:Routes=[
         {path:'loanofficer',component:LoanOfficerComponent},
         {path:'contacts',component:ContactsComponent},
         {path:'borrowers',component:BorrowersComponent},
-        {path:'createloanofficer',component:CreateLoanOfficerComponent}
+        {path:'createloanofficer',component:CreateLoanOfficerComponent},
         {path:'borrowers',component:BorrowersComponent},
         
         

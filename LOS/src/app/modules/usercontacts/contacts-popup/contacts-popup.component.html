@@ -3,14 +3,14 @@
     <form [formGroup]="contactsForm" >
       <mat-form-field>
         <mat-label style="color: seagreen">COMPANY NAME</mat-label>
-        <input matInput placeholder="Ex.Wipro" name="CompanyName" [required]="true" formControlName="CompanyName">
+        <input matInput placeholder="Ex.Wipro" name="CompanyName" formControlName="CompanyName">
         <mat-hint style="color: red;" *ngIf="contactsForm.get('CompanyName')?.touched && contactsForm.get('CompanyName')?.errors?.['required']">
             CompanyName is Required
         </mat-hint>
       </mat-form-field>
     <mat-form-field>
         <mat-label style="color: seagreen">FIRST NAME</mat-label>
-        <input matInput placeholder="Ex. Abhishek" name="FirstName" [required]="true" formControlName="FirstName">
+        <input matInput placeholder="Ex. Abhishek" name="FirstName" formControlName="FirstName">
         <mat-hint style="color: red;" *ngIf="contactsForm.get('FirstName')?.touched && contactsForm.get('FirstName')?.errors?.['required']">
           FirstName is Required
         </mat-hint>
