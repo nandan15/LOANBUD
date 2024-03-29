@@ -26,11 +26,11 @@ dialogRef.afterClosed().subscribe(result=>{
 });
 }
 
-
-
 ngOnInit(): void {
   $(document).ready(function() {
     $('#example').DataTable();
   });
 }
+
+
 }
