@@ -181,14 +181,3 @@ body {
     background: white;
   }
   
-  .btn {
-    padding: 10px 20px;
-    color: #fff;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-    align-content: center;
-    margin-top: 20px;
-}

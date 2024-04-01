@@ -51,30 +51,54 @@
 
     <a  (click)="toggleSubMenu(3)">Calendar <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[3]"></i></a>
     <div class="submenu" [class.open]="isOpen[3]">
-        <a href="#">Submenu Item 1</a>
-        <a href="#">Submenu Item 2</a>
-        <a href="#">Submenu Item 3</a>
+        <a href="#">Calendar</a>
+        <a href="#">Task List</a>
+        <a href="#">Create Client Task</a>
+        <a href="#">Create Client Remainder</a>
     </div>
 
     <a href="#" (click)="toggleSubMenu(4)">Reports <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[4]"></i></a>
     <div class="submenu" [class.open]="isOpen[4]">
-        <a href="#">Submenu Item 1</a>
-        <a href="#">Submenu Item 2</a>
-        <a href="#">Submenu Item 3</a>
+        <a href="#">Servicing</a>
+        <a href="#">3rd Party Services</a>
+        <a href="#">Billing / Payables</a>
+        <a href="#">Bounced Emails</a>
+        <a href="#">Mail Queue - File Related</a>
+        <a href="#">Mail Queue - Marketing Related</a>
+        <a href="#">Employee - Reports</a>
     </div>
 
     <a href="#" (click)="toggleSubMenu(5)">Calculators <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[5]"></i></a>
     <div class="submenu" [class.open]="isOpen[5]">
-        <a href="#">Submenu Item 1</a>
-        <a href="#">Submenu Item 2</a>
-        <a href="#">Submenu Item 3</a>
+        <a href="#">Bi - Weekly Mortgage</a>
+        <a href="#">Blended Rate Payment</a>
+        <a href="#">Debt Consolidation</a>
+        <a href="#">Intrest Calculator</a>
+        <a href="#">Loan Amortization</a>
+        <a href="#">Loan Calculator</a>
     </div>
 
     <a href="#" (click)="toggleSubMenu(6)">Settings <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[6]"></i></a>
     <div class="submenu" [class.open]="isOpen[6]">
-        <a href="#">Submenu Item 1</a>
-        <a href="#">Submenu Item 2</a>
-        <a href="#">Submenu Item 3</a>
+        <a href="#" (click)="toggleSubMenu(6)">Platform Settings<i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[6]"></i></a> 
+        <div class="submenu"[class.open]="isOpen[6]">
+            <a href="#">Company Info</a>
+            <a href="#">Doc Library</a>
+            <a href="#">Required Docs</a>
+            <a href="#">Doc Statuses</a>
+            <a href="#">Workflow</a>
+            <a href="#">File Status</a>
+            <a href="#">File Sub-status</a>
+            <a href="#">Web Forms/Loains</a>
+            <a href="#">Custom Loan Guidelines</a>
+            <a href="#">File Tab Display Order</a>
+            <a href="#">Form Fields</a>
+        </div>
+        <a href="#">Automation</a>
+        <a href="#">API - Lead/Data Posting</a>
+        <a href="#">Import Data</a>
+        <a href="#">Doc Wizard Tool</a>
+        <a href="#">E-mail Wizard Tool</a>
     </div>
 
     <a href="#" (click)="toggleSubMenu(7)">Help Center Live Training <i class="fas fa-chevron-right dropdown-icon" [class.rotate]="isOpen[7]"></i></a>
